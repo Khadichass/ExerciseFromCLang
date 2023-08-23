@@ -13,14 +13,15 @@ int main(){
   //   printf("i = %d sum =%d \n", i, sum);
   // }
 
-  int sum = 0;
+  int numb;
 
-  for (int i = 1; i <= 50; i+=2)
+  printf("Enter the number:");
+  scanf("%d",&numb);
+
+  for (int i = 1; i <= 10; i++)
   {
-    sum+=i;
-    printf("i= %d , sum= %d\n",i,sum);
+    printf("%d * %d = %d\n",i,numb, i*numb);
   }
-  
   
   return 0;
 
