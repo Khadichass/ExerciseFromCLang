@@ -7,7 +7,6 @@ void func(char* param){
 
 }
 int main(){
-  
   char  str_static[] ="qwasar";
   char * str_dynamic = malloc(8);
   strcpy(str_dynamic,str_static);
