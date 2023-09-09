@@ -6,6 +6,7 @@ void func(char* param){
   printf("%c",param[2]);
 
 }
+
 int main(){
   char  str_static[] ="qwasar";
   char * str_dynamic = malloc(8);
