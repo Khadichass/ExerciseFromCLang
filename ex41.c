@@ -12,7 +12,7 @@ int main()
 
   struct book kh;
 
-  printf("Enter the name of the book:");
+  printf("Enter the name of the book :");
   scanf("%s", kh.name);
 
   printf("Enter the author:");
