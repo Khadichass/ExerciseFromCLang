@@ -3,10 +3,15 @@
 
 char* my_strstr(char* param_1, char* param_2)
 {
+    if (*param_2 == '\0')
+    {
+        return param_1;
+    }
+    
     for(int i = 0; param_1[i] != '\0'; i++)
     {
         for (int j = 0; param_2[j] != '\0'; j++) {
-            if (param_2[j+i] == '\0') {
+            if (param_2[j+1] == '\0') {
                 return &param_1[i];
             }
 
@@ -23,11 +28,11 @@ char* my_strstr(char* param_1, char* param_2)
 int main()
 {
   
-  char param_1[5] = "";
-  char param_2[5] = "a";
+  char param_1[6] = "aaa";
+  char param_2[6] = "aaaa";
   char *strstrr;
 
-  strstrr = my_strstr(param_1, param_2);
+  strstrr = strstr(param_1, param_2);
 
   printf("Answ: %s\n", strstrr);
    
