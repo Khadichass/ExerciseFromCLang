@@ -128,9 +128,6 @@ int main(int argc, char** argv)
   {
     my_strcpy(secret_code, my_srand());
   }
-  
-
-  
 
   return 0;
 }
