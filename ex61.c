@@ -23,5 +23,5 @@ char* my_strstr1(char* p1, char* p2)
             }
         }
     }
-    return NULL;
+    return 0;
 }
